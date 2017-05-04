@@ -58,7 +58,7 @@ public class MainActivity extends Activity
 		
 		donate.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View v) {
-					Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=rafael%2ecosta%2eteixeira1982%40gmail%2ecom&lc=BR&item_name=App%20app2org&no_note=0&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest"));
+					Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VJFLHXYP7A786"));
 					startActivity(browserIntent);
 				}
 			});
