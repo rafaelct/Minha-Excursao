@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/lytItemEstatistica">
+
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#06A5E7">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingEnd="2dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="GERAL"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="LISTA"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:paddingLeft="2dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="ESPERA"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#A5FFC8">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Lugares"
+				android:layout_width="wrap_content"
+				android:paddingTop="10dp"
+				android:textStyle="bold"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#39F167">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Total"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtTotLugares"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtTotLugaresLista"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtTotLugaresEspera"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#E1FF8E">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Ocupados"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtOcuLugares"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtOcuLugaresLista"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtOcuLugaresEspera"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#39F167">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Disponiveis"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtDisLugares"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtDisLugaresLista"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtDisLugaresEspera"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#A5FFC8">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Arrecadação"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:paddingTop="10dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#39F167">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Total"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtTotArrecadado"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtTotArrecadadoLista"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtTotArrecadadoEspera"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#E1FF8E">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Arrecadado"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtOcuArrecadado"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtOcuArrecadadoLista"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtOcuArrecadadoEspera"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#39F167">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Faltando"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtDisArrecadado"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtDisArrecadadoLista"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:id="@+id/txtDisArrecadadoEspera"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#A5FFC8">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Pagamentos"
+				android:layout_width="wrap_content"
+				android:paddingTop="10dp"
+				android:textStyle="bold"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#39F167">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Total"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtTotPagamentos"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#E1FF8E">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Pagaram"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtOcuPagamentos"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtOcuPagamentosLista"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtOcuPagamentosEspera"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#39F167">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Falta"
+				android:layout_width="wrap_content"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtDisPagamentos"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtDisPagamentosLista"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="N/A"
+				android:layout_width="wrap_content"
+				android:paddingLeft="5dp"
+				android:id="@+id/txtDisPagamentosEspera"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+
+	</TableLayout>
+
+</LinearLayout>
+

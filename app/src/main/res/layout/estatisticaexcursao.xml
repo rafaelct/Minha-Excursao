@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#F9F0A9"
+	android:id="@+id/lytEstatistica">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#C3DF22">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/estatistica"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Estatistica"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"/>
+
+		<FrameLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@android:drawable/ic_delete"
+				android:layout_marginRight="10dp"
+				android:layout_gravity="right"
+				android:id="@+id/btnEstatisticaCancelar"/>
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/copy"
+				android:layout_gravity="center"
+				android:id="@+id/btnExportar"/>
+
+		</FrameLayout>
+		
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#C3DF22">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Excursão:"
+			android:layout_width="wrap_content"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:id="@+id/txtEstatisticaExcursao"/>
+
+		
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/lytScrollEstatistica"/>
+
+	</ScrollView>
+
+</LinearLayout>
+

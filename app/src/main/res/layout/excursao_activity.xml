@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="@drawable/excursao">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/lytTit"
+			android:background="#08C814">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:background="#BBFFFFFF">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="Titulo:"
+					android:layout_width="wrap_content"
+					android:textStyle="bold"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPersonName"
+					android:ems="10"
+					android:layout_width="wrap_content"
+					android:id="@+id/edNome"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<ScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:id="@+id/scroll">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:background="#BBFFFFFF">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:src="@drawable/dinheiro"/>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:text="Passagem (valor por pessoa) :"
+							android:layout_width="wrap_content"
+							android:textStyle="bold"/>
+
+						<EditText
+							android:layout_height="wrap_content"
+							android:inputType="numberDecimal"
+							android:ems="10"
+							android:layout_width="wrap_content"
+							android:id="@+id/edValor"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:src="@drawable/onibus"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:text="Qtd. de lugares:"
+						android:layout_width="wrap_content"
+						android:textStyle="bold"/>
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="number"
+						android:ems="10"
+						android:layout_width="wrap_content"
+						android:id="@+id/edVagas"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<CheckBox
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="permitir lista de espera"
+						android:id="@+id/chkListaEspera"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/lAds">
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@drawable/save"
+		android:layout_gravity="bottom|right"
+		android:layout_marginBottom="80dp"
+		android:layout_marginRight="50dp"
+		android:id="@+id/btnSaveExcursao"/>
+
+</FrameLayout>
+

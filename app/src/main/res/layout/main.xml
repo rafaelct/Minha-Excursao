@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@drawable/excursao">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#BBFFFFFF">
+
+		<FrameLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="#08C814">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="right"
+				android:layout_gravity="right">
+
+				<ImageButton
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/passageiro"
+					android:id="@+id/btnPassageiros"/>
+
+			</LinearLayout>
+
+		</FrameLayout>
+
+		<ScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:id="@+id/lytScroll"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp">
+
+			</LinearLayout>
+
+		</ScrollView>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/lAds">
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:src="@drawable/doar"
+				android:id="@+id/doar"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@drawable/add"
+		android:layout_gravity="bottom|right"
+		android:layout_marginRight="40dp"
+		android:layout_marginBottom="80dp"
+		android:id="@+id/btnAdd"/>
+
+</FrameLayout>
+
